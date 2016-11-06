@@ -1,0 +1,89 @@
+//more than one decl
+int x;
+int x;
+bool y;
+bool y;
+
+struct _st{
+	int mem;
+};
+struct _st{
+	int mem;
+};
+
+struct _st stInstance;
+
+int func(){
+	int field;
+	field = 0;
+	return 1;
+}
+
+int func(){
+	bool fieldbool;
+	fieldbool = false;
+	return 0;
+}
+
+//Undeclared identifier
+int main(){
+	nox=0;
+	noy=true;
+	nofunc();
+
+//Dot-access of non-struct type
+	x.mem =0;
+	y.thefuck = true;
+
+//invalid struct dot access
+	stInstance.nothing.bad = 0;
+
+//Invalid struct field name
+	stInstance.nomem = 0;
+	stInstance.nomem1= true;
+
+//mul invalid struct dot access
+	what.the.fuck.is.this = false;
+}
+
+//Non-function declared void
+void voidParam(void x){
+	void badVoid;
+}
+
+//Invalid name of struct type
+struct _whatever badStTypeName;
+
+//test for two bads
+void x;
+
+//check recursive struct define
+struct _st1 {
+	struct _st1 st1;
+};
+
+
+
+//bad expression, not decled yet
+void tstfunc(){
+	flag = true;
+	para = local + term;
+	para = local - term;
+	para = local * term;
+	para = local / term;
+	para = !local;
+	para = local && term;
+	para = local || term;
+	flag = local == term;
+	flag = local != term;
+	flag = local >  term;
+	flag = local <  term;
+	flag = local >= term;
+	flag = local <= term;
+	para = -local;
+	para = -local + term;
+	para = local - -local /term;
+	para = local = term;
+	para = local = local = term;
+	para = local-local*local/local+local;
+}

@@ -1,0 +1,69 @@
+int x;
+int x;
+bool y;
+bool y;
+struct _st{
+    int mem;
+};
+
+struct _st{
+    int mem;
+};
+
+struct _st stInstance;
+int func() {
+    int field;
+    field(int) = 0;
+    return 1;
+}
+
+int func() {
+    bool fieldbool;
+    fieldbool(bool) = false;
+    return 0;
+}
+
+int main() {
+    nox(null) = 0;
+    noy(null) = true;
+    nofunc(->null)();
+    (x(int)).mem(null) = 0;
+    (y(bool)).thefuck(null) = true;
+    ((stInstance(_st)).nothing(null)).bad(null) = 0;
+    (stInstance(_st)).nomem(null) = 0;
+    (stInstance(_st)).nomem1(null) = true;
+    ((((what(null)).the(null)).fuck(null)).is(null)).this(null) = false;
+}
+
+void voidParam(void x) {
+    void badVoid;
+}
+
+struct _whatever badStTypeName;
+void x;
+struct _st1{
+    struct _st1 st1;
+};
+
+void tstfunc() {
+    flag(null) = true;
+    para(null) = (local(null) + term(null));
+    para(null) = (local(null) - term(null));
+    para(null) = (local(null) * term(null));
+    para(null) = (local(null) / term(null));
+    para(null) = (!local(null));
+    para(null) = (local(null) && term(null));
+    para(null) = (local(null) || term(null));
+    flag(null) = (local(null) == term(null));
+    flag(null) = (local(null) != term(null));
+    flag(null) = (local(null) > term(null));
+    flag(null) = (local(null) < term(null));
+    flag(null) = (local(null) >= term(null));
+    flag(null) = (local(null) <= term(null));
+    para(null) = (-local(null));
+    para(null) = ((-local(null)) + term(null));
+    para(null) = (local(null) - (-(local(null) / term(null))));
+    para(null) = (local(null) = term(null));
+    para(null) = (local(null) = (local(null) = term(null)));
+    para(null) = ((local(null) - ((local(null) * local(null)) / local(null))) + local(null));
+}

@@ -1,0 +1,124 @@
+int intx;
+bool flag;
+struct _st{
+    int stmemint;
+    bool stmembool;
+};
+
+struct _st1{
+    int st1memint;
+    bool st1membool;
+    struct _st st;
+};
+
+struct _st2{
+    int st2memint;
+    bool st2membool;
+    struct _st1 st1;
+};
+
+struct _st2 st2;
+int function(int para, bool para2) {
+    int local;
+    bool flag;
+    int term;
+    cout << "test decls";
+    intx(int) = 1;
+    flag(bool) = true;
+    para(int) = (local(int) + term(int));
+    para(int) = (local(int) - term(int));
+    para(int) = (local(int) * term(int));
+    para(int) = (local(int) / term(int));
+    para(int) = (!local(int));
+    para(int) = (local(int) && term(int));
+    para(int) = (local(int) || term(int));
+    flag(bool) = (local(int) == term(int));
+    flag(bool) = (local(int) != term(int));
+    flag(bool) = (local(int) > term(int));
+    flag(bool) = (local(int) < term(int));
+    flag(bool) = (local(int) >= term(int));
+    flag(bool) = (local(int) <= term(int));
+    para(int) = (-local(int));
+    para(int) = ((-local(int)) + term(int));
+    para(int) = (local(int) - (-(local(int) / term(int))));
+    para(int) = (local(int) = term(int));
+    para(int) = (local(int) = (local(int) = term(int)));
+    para(int) = ((local(int) - ((local(int) * local(int)) / local(int))) + local(int));
+    para(int) = (local(int) = ((local(int) + ((local(int) * local(int)) / local(int))) - local(int)));
+    local(int)++;
+    term(int)--;
+    (((st2(_st2)).st1(_st1)).st(_st)).stmemint(int) = 0;
+    (((st2(_st2)).st1(_st1)).st(_st)).stmembool(bool) = true;
+    (st2(_st2)).st2memint(int) = 0;
+    ((st2(_st2)).st1(_st1)).st1membool(bool) = false;
+    if ((para(int) == local(int))) {
+    }
+    if (true) {
+        int tstIfDecl;
+        int tstIfDecl1;
+        tstIfDecl(int) = tstIfDecl1(int);
+    }
+    if (false) {
+        int testIfDecl;
+        bool tstIfDeclBool;
+    }
+    if ((local(int) < term(int))) {
+        bool tstIfElseDecl;
+        para(int) = (local(int) || term(int));
+    }
+    else {
+        bool tstIfElseDecl;
+        para(int) = (local(int) || term(int));
+    }
+    while ((local(int) > term(int))) {
+    }
+    while ((local(int) <= term(int))) {
+        int tstWhileDecl;
+        bool tstWhileDeclBool;
+        cin >> term(int);
+        cout << "Hello Kitty";
+    }
+    while (true) {
+    }
+    while (false) {
+        int tstRecursive;
+        while (true) {
+            cout << "second level";
+            if (true) {
+                term(int)++;
+                cout << "should be stmts";
+                local(int) = term(int);
+            }
+        }
+    }
+    cout << "test return";
+    return (term(int) + local(int));
+    return;
+}
+
+int fnRec(int para1, bool para2) {
+    function(int, bool->int)(para1(int), para1(int));
+}
+
+bool fnBool(bool paraB) {
+    paraB(bool) = false;
+    return paraB(bool);
+}
+
+void fnVoid() {
+}
+
+void tstOtherFunction() {
+    intx(int) = fnVoid(->void)();
+    intx(int) = function(int, bool->int)(intx(int), intx(int));
+    if (true) {
+        fnVoid(->void)();
+        intx(int) = function(int, bool->int)(intx(int), intx(int));
+        while (true) {
+            fnVoid(->void)();
+        }
+    }
+}
+
+void tstMulFuncParams(int param1, bool param2, int param3, int param4) {
+}
